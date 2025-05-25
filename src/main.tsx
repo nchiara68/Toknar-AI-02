@@ -5,9 +5,9 @@ import { createRoot } from 'react-dom/client'
 import { Amplify } from 'aws-amplify'
 import config from '../amplify_outputs.json'
 import App from './App'
-//Amplify.configure(config);
+Amplify.configure(config);
 // Create a typed config that matches Amplify expectations
-const amplifyConfig: Record<string, unknown> = {
+/*const amplifyConfig: Record<string, unknown> = {
   ...config,
   oauth: {
     domain: 'toknar-auth.auth.eu-central-1.amazoncognito.com',
@@ -15,9 +15,9 @@ const amplifyConfig: Record<string, unknown> = {
     redirectSignOut: 'https://main.dv51549stecdl.amplifyapp.com/',
     responseType: 'code',
   },
-};
+};*/
 
-Amplify.configure(amplifyConfig);
+//Amplify.configure(amplifyConfig);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
