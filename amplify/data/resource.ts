@@ -1,6 +1,6 @@
 // Import the Amplify Gen 2 data helpers
-import {ClientSchema, a, defineData } from '@aws-amplify/backend';
-
+import { a, defineData } from '@aws-amplify/backend';
+import type { ClientSchema } from '@aws-amplify/backend';
 // Define your schema
 const schema = a.schema({
   // Define a conversation data model named 'chat'
