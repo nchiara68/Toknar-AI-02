@@ -1,41 +1,12 @@
-// src/pages/Home.tsx
-import React from 'react';
-import {
-  View,
-  Heading,
-  Text,
-  useTheme
-} from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
+//import React from 'react';
+import MoveFiles from '../components/MoveFiles';
 
-const Home: React.FC = () => {
-  const { tokens } = useTheme();
-
+export default function MoveFilesPage() {
   return (
-    <View
-      padding={tokens.space.large}
-      backgroundColor="#002b4b"
-      height="100vh"
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'center',
-      }}
-    >
-      <Heading level={1} color="white">
-        🏡 Welcome to the Page 2!
-      </Heading>
-      <Text
-        fontSize={tokens.fontSizes.large}
-        marginTop={tokens.space.medium}
-        color="white" // ✅ white text
-      >
-        This is a basic test page using Amplify UI.
-      </Text>
-    </View>
+    <main style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
+      <h1>📁 S3 File Manager</h1>
+      <p>Drag and drop files between folders</p>
+      <MoveFiles />
+    </main>
   );
-};
-
-export default Home;
+}
