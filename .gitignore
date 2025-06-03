@@ -7,6 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Build output
 node_modules
 dist
 dist-ssr
@@ -23,8 +24,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# amplify
+# Amplify Gen 2
 .amplify
-amplify_outputs*
-!src/amplify_outputs.json
+!amplify_outputs.json  # ✅ Allow output config file at root
 amplifyconfiguration*
