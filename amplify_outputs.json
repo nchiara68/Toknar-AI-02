@@ -1068,5 +1068,34 @@
       }
     }
   },
+  "storage": {
+    "aws_region": "eu-central-1",
+    "bucket_name": "amplify-toknarai01-nicola-myfilemanagerbucketfixbu-ade4cfmohrhz",
+    "buckets": [
+      {
+        "name": "myFileManagerBucket-fix",
+        "bucket_name": "amplify-toknarai01-nicola-myfilemanagerbucketfixbu-ade4cfmohrhz",
+        "aws_region": "eu-central-1",
+        "paths": {
+          "folder-a/*": {
+            "authenticated": [
+              "get",
+              "list",
+              "write",
+              "delete"
+            ]
+          },
+          "folder-b/*": {
+            "authenticated": [
+              "get",
+              "list",
+              "write",
+              "delete"
+            ]
+          }
+        }
+      }
+    ]
+  },
   "version": "1.4"
 }
